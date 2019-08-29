@@ -1,0 +1,175 @@
+/* FONTS */
+@font-face {
+  font-family: CalibreMedium;
+  src: url('../fonts/Calibre/CalibreMedium.otf');
+}
+
+@font-face {
+  font-family: Calibre;
+  src: url('../fonts/Calibre/CalibreRegular.otf');
+}
+
+@font-face {
+  font-family: SF-Medium;
+  src: url('../fonts/SF/SFMono-Medium.otf');
+}
+
+/* GLOBAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Calibre, sans-serif;
+  background: #0a192e;
+  color: rgba(230, 241, 255, 100%);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* MOBILE ELEMENTS */
+
+.hide-mobile {
+  display: none;
+}
+
+/* HEADER BAR */
+
+header {
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+  background: #0a192e;
+}
+
+.header-shadow {
+  box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 16%);
+}
+
+.nav-up {
+  top: -50px;
+}
+
+header div {
+  margin: 0 auto;
+  padding: 1.4em 0 0.9em 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  margin-top: 0em;
+  cursor: pointer;
+}
+
+header h1 {
+  font-family: CalibreMedium, sans-serif;
+  font-size: 1.25em;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul {
+  text-align: center;
+  position: fixed;
+  width: 50%;
+  top: 0;
+  right: 0;
+  background: rgba(10, 25, 46, 90%);
+  height: 100%;
+  z-index: 7;
+  padding-top: 3em;
+}
+
+header nav ul li {
+  display: block;
+  width: 100%;
+  padding: 1em 0;
+}
+
+.exit-btn {
+  margin-bottom: 1em;
+  margin-top: -2.5em;
+  text-align: right;
+  margin-left: -1.75em;
+}
+
+.exit-btn img {
+  width: 15px;
+  cursor: pointer;
+}
+
+#whitespace {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  flex-grow: 1;
+  height: 65%;
+  width: 50%;
+}
+
+#resume-button {
+  background: #64ffda;
+  color: #0a192e;
+  border-radius: 400px;
+  padding: 0.4em 0.4em 0.15em 0.4em;
+}
+
+/* MAIN */
+
+/* HERO */
+
+.hero {
+  margin: 12.375em 0;
+}
+
+.hero ul {
+  list-style: none;
+}
+
+.cta {
+  background: #64ffda;
+  color: #0a192e;
+  border-radius: 400px;
+  padding: 0.7em 0em 0.4em 0.4em;
+  margin-top: 2em;
+  width: 9.375em;
+  height: 1.875em;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  font-family: CalibreMedium;
+}
+
+.hero ul {
+  margin: 1.375em auto;
+  font-family: Calibre;
+  font-size: 0.688em;
+  font-size: 0.7em;
+  color: rgba(230, 241, 255, 49%);
+  display: flex;
+}
+
+.hero ul li {
+  margin-right: 1.25em;
+}
+
+.hero p {
+  font-size: 1.125em;
+  color: rgba(230, 241, 255, 33%);
+  width: 80%;
+}

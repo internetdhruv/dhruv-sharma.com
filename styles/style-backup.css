@@ -1,0 +1,155 @@
+@font-face {
+  font-family: Calibre-Medium;
+  src: url("../fonts/Calibre/CalibreMedium.otf");
+}
+@font-face {
+  font-family: Calibre;
+  src: url("../fonts/Calibre/CalibreRegular.otf");
+}
+
+@font-face {
+  font-family: SF-Medium;
+  src: url("../fonts/SF/SFMono-Medium.otf");
+}
+
+body {
+  margin: 0;
+  font-family: Calibre, sans-serif;
+  background: #0a192e;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-container {
+  /* text-align: center; */
+  padding: 0.8em 1.2em;
+}
+
+.hide-mobile {
+  display: none;
+}
+
+header {
+  box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 16%);
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  color: #e6f1ff;
+  font-size: 20px;
+  font-family: Calibre-Medium, sans-serif;
+}
+
+header nav {
+  font-family: SF-Medium, sans-serif;
+  font-size: 19px;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #c0c6e6;
+}
+
+#resume-button {
+  border: #64ffda solid;
+  border-radius: 40px;
+  padding: 0 0 0 1.1em;
+  width: 40%;
+  margin-left: 2em;
+}
+
+nav ul {
+  position: fixed;
+  width: 45%;
+  top: 0;
+  right: 0;
+  text-align: left;
+  background: rgba(10, 25, 46, 90%);
+  height: 100%;
+  z-index: 7;
+  padding-top: 3em;
+}
+
+#whitespace {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  flex-grow: 1;
+  height: 100%;
+  width: 55%;
+}
+
+/* #whitespace:before {
+  content: ‘’;
+  height: 100%;
+  background: inherit;
+  position: fixed;
+  left: -25px; //giving minus -25px left position
+  right: 0;
+  top: -25px; //giving minus -25px top position
+  bottom: 0;
+  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.3);
+  filter: blur(10px);
+} */
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 1em 2em;
+}
+
+.hero {
+  padding: 7em 0;
+}
+
+.hero h1 {
+  color: #e6f1ff;
+  font-size: 40px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.hero ul {
+  list-style: none;
+  display: flex;
+  color: rgba(230, 241, 255, 49%);
+  font-size: 12px;
+  padding-left: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.hero ul li {
+  margin-right: 1.25em;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.hero ul:last-child {
+  margin-right: 0;
+}
+
+.hero p {
+  color: rgba(230, 241, 255, 33%);
+}
+
+.hero .cta {
+  color: rgba(230, 241, 255);
+  border: #64ffda solid;
+  font-size: 12px;
+  border-radius: 40px;
+  padding: 0.6em 0.4em 0.4em 0.4em;
+}

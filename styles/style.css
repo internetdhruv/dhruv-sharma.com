@@ -1,17 +1,17 @@
 /* FONTS */
 @font-face {
   font-family: CalibreMedium;
-  src: url('../fonts/Calibre/CalibreMedium.otf');
+  src: url("../fonts/Calibre/CalibreMedium.otf");
 }
 
 @font-face {
   font-family: Calibre;
-  src: url('../fonts/Calibre/CalibreRegular.otf');
+  src: url("../fonts/Calibre/CalibreRegular.otf");
 }
 
 @font-face {
   font-family: SF-Medium;
-  src: url('../fonts/SF/SFMono-Medium.otf');
+  src: url("../fonts/SF/SFMono-Medium.otf");
 }
 
 /* GLOBAL STYLES */
@@ -29,6 +29,10 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+p {
+  color: rgba(230, 241, 255, 49%);
 }
 
 .main-container {
@@ -112,12 +116,12 @@ header nav ul li {
 }
 
 #whitespace {
-  content: '';
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
   flex-grow: 1;
-  height: 65%;
+  height: 100%;
   width: 50%;
 }
 
@@ -140,14 +144,19 @@ header nav ul li {
   list-style: none;
 }
 
+.cta-container {
+  text-align: center;
+}
+
 .cta {
+  display: block;
   background: #64ffda;
   color: #0a192e;
   border-radius: 400px;
-  padding: 0.7em 0em 0.4em 0.4em;
   margin-top: 2em;
   width: 9.375em;
-  height: 1.875em;
+  font-size: 1.2em;
+  padding: 0.4em 0 0.1em 0;
 }
 
 .hero h1 {
@@ -170,6 +179,96 @@ header nav ul li {
 
 .hero p {
   font-size: 1.125em;
-  color: rgba(230, 241, 255, 33%);
+  color: rgba(230, 241, 255, 49%);
   width: 80%;
+}
+
+/* SCROLL ICON */
+
+.scroll-container {
+  margin-top: 6.5em;
+  text-align: center;
+}
+
+.scroll {
+  width: 1em;
+  animation: move 2s infinite alternate;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(20px);
+  }
+}
+
+/* ABOUT */
+
+.about {
+  margin-bottom: 15em;
+}
+
+.about h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.about p {
+  width: 90%;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.about h2 {
+  text-align: center;
+  margin: 1.2em 0 0 0;
+  padding: 0;
+  font-size: 1.1em;
+}
+
+.about h3 {
+  font-size: 1em;
+}
+
+.svg-icons {
+  width: 2em;
+  height: 2em;
+  margin: 0em 0.6em 0em 0.6em;
+  vertical-align: -0.2em;
+}
+
+.skills {
+  display: flex;
+  overflow-x: auto;
+  align-items: center;
+}
+
+.skills .skill {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.skills .skill i {
+  font-size: 2em;
+  margin: 0.3em;
+  line-height: 1.5em;
+}
+
+.category {
+  display: block;
+  position: -webkit-sticky; /* Required for Safari */
+  position: sticky;
+  left: 0;
+
+  display: block;
+  background: #64ffda;
+  color: #0a192e;
+  border-radius: 400px;
+  width: 6.5em;
+  font-size: 1.2em;
+  padding: 0.4em 0 0.1em 0;
+  text-align: center;
 }

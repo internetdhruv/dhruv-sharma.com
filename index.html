@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
     <title>Dhruv Sharma</title>
     <meta
       name="description"
@@ -27,7 +31,7 @@
         <nav>
           <a href="#" class="hide-desktop show-mobile">
             <img
-              src="./icons/ham.svg"
+              src="./icons/elements/ham.svg"
               alt="toggle menu"
               class="menu"
               id="menu"
@@ -35,7 +39,7 @@
           </a>
           <ul class="show-desktop hide-mobile" id="nav">
             <li id="exit" class="exit-btn hide-desktop">
-              <img src="./icons/exit.svg" alt="exit menu" />
+              <img src="./icons/elements/exit.svg" alt="exit menu" />
             </li>
             <li class="hide-mobile" id="whitespace"></li>
             <li><a href="#">about</a></li>
@@ -55,7 +59,7 @@
     </header>
     <main>
       <div class="main-container">
-        <div class="hero">
+        <section class="hero">
           <h1>Dhruv Sharma</h1>
           <ul>
             <li><h3>Software Engineer</h3></li>
@@ -66,14 +70,72 @@
             I’m a Computer Science student at UCLA specializing in Full Stack
             Web Development, Computer Vision and Data Science
           </p>
-          <div class="cta">
-            <a href="mailto:dhruvsharma0503@gmail.com">Get in touch!</a>
+          <div class="cta-container">
+            <a href="mailto:dhruvsharma0503@gmail.com" class="cta">
+              Get in touch!
+            </a>
           </div>
-        </div>
+          <div class="scroll-container">
+            <img
+              src="icons/elements/scroll-icon.svg"
+              alt="scroll down"
+              class="scroll hide-mobile show-desktop"
+            />
+          </div>
+        </section>
+        <section class="about">
+          <h1>About</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias,
+            vitae beatae deserunt omnis exercitationem quod, accusantium
+            repellat repudiandae ex iste quas, harum tenetur reprehenderit
+            nihil! Dolorem pariatur magnam quaerat sit?
+          </p>
+          <h2>Technologies I Have Worked With</h2>
+          <div class="skills">
+              <div class="skill">
+                <div class="category">Languages</div>
+                <i class="devicon-python-plain-wordmark colored"></i>
+                <i class="devicon-c-plain-wordmark"></i>
+                <i class="devicon-cplusplus-plain-wordmark"></i>
+                <i class="devicon-java-plain-wordmark colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+                <i class="devicon-html5-plain-wordmark colored"></i>
+                <i class="devicon-css3-plain-wordmark colored"></i>
+              </div>
+              <div class="skill">
+                <div class="category">Frameworks</div>
+                <i class="devicon-nodejs-plain-wordmark colored"></i>
+                <i class="devicon-express-original"></i>
+                <i class="devicon-react-original-wordmark"></i>
+                <i class="devicon-sass-original colored"></i>
+              </div>
+              <div class="skill">
+                <div class="category">Tools</div>
+                <img src="./icons/tech-icons/bash.svg" class="svg-icons" />
+                <i class="devicon-git-plain-wordmark colored"></i>
+                <i class="devicon-github-plain-wordmark"></i>
+              </div>
+              <div class="skill">
+                <div class="category">Libraries</div>
+                <img src="./icons/tech-icons/OpenCV.svg" class="svg-icons" />
+                <img src="./icons/tech-icons/pandas.svg" class="svg-icons" />
+              </div>
+              <div class="skill">
+                  <div class="category">Others</div>
+                  <img src="./icons/tech-icons/arduino.svg" class="svg-icons" />
+                  <i class="devicon-photoshop-plain"></i>
+                  <i class="devicon-illustrator-plain colored"></i>
+                  <img src="./icons/tech-icons/excel.svg" class="svg-icons" />
+                  <img src="./icons/tech-icons/xd.svg" class="svg-icons" />
+                </div>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
   </body>
   <script src="./scripts/index.js"></script>
-  <script src="./scripts/navbar.jss"></script>
+  <script src="./scripts/navbar.js"></script>
   <script src="./scripts/scroll.js"></script>
 </html>

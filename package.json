@@ -1,0 +1,24 @@
+{
+  "name": "dhruv-sharma.com",
+  "version": "1.0.0",
+  "description": "Dhruv Sharma's Personal Website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhruvsharma78/dhruv-sharma.com.git"
+  },
+  "author": "Dhruv Sharma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dhruvsharma78/dhruv-sharma.com/issues"
+  },
+  "homepage": "https://github.com/dhruvsharma78/dhruv-sharma.com#readme",
+  "devDependencies": {
+    "eslint": "^6.2.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}

@@ -1,42 +1,39 @@
+/* eslint-disable no-undef */
 // Hide header on scroll down
-var didScroll
-var lastScrollTop = 0
-var delta = 5
-var navbarHeight = $("header").outerHeight()
+let didScroll;
+let lastScrollTop = 0;
+const delta = 5;
+const navbarHeight = $('header').outerHeight();
 
-$(window).scroll(function(event) {
-  didScroll = true
-})
+$(window).scroll(() => {
+  didScroll = true;
+});
 
-setInterval(function() {
-  if (didScroll) {
-    hasScrolled()
-    didScroll = false
-  }
-}, 250)
-
-function hasScrolled() {
-  var st = $(this).scrollTop()
+const hasScrolled = () => {
+  const st = $(this).scrollTop();
 
   // Make scroll more than delta
-  if (Math.abs(lastScrollTop - st) <= delta) return
+  if (Math.abs(lastScrollTop - st) <= delta) return;
 
   // If scrolled down and past the navbar, add class .nav-up.
   if (st > lastScrollTop && st > navbarHeight) {
     // Scroll Down
-    $("header")
-      .removeClass("nav-down")
-      .addClass("nav-up")
-      .removeClass("header-shadow")
-  } else {
-    // Scroll Up
-    if (st + $(window).height() < $(document).height()) {
-      $("header")
-        .removeClass("nav-up")
-        .addClass("nav-down")
-        .addClass("header-shadow")
-    }
+    $('header')
+      .removeClass('nav-down')
+      .addClass('nav-up')
+      .removeClass('header-shadow');
+  } else if (st + $(window).height() < $(document).height()) {
+    $('header')
+      .removeClass('nav-up')
+      .addClass('nav-down')
+      .addClass('header-shadow');
   }
-  console.log("yeet")
-  lastScrollTop = st
-}
+  lastScrollTop = st;
+};
+
+setInterval(() => {
+  if (didScroll) {
+    hasScrolled();
+    didScroll = false;
+  }
+}, 250);

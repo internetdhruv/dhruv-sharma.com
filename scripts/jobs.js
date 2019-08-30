@@ -28,8 +28,16 @@ const updateDisplayedJob = () => {
   document.getElementById(selectedJob).classList.add('job-title-selected');
   fetchJSONFile('../data/job_data.json', (res) => {
     const foundJob = res.jobs.find((job) => job.code === selectedJob);
+    let dateText;
+    dateText = `${foundJob.startMonth}, ${foundJob.startYear}`;
+    if (foundJob.endYear === null) {
+      dateText += ' - Present';
+    } else {
+      dateText += ` - ${foundJob.endMonth}, ${foundJob.endYear}`;
+    }
     document.getElementById('company').innerHTML = foundJob.company;
     document.getElementById('title').innerHTML = foundJob.title;
+    document.getElementById('date').innerHTML = dateText;
     document.getElementById('location').innerHTML = foundJob.location;
     document.getElementById('description').innerHTML = foundJob.description;
   });

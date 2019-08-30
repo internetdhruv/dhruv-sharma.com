@@ -343,11 +343,22 @@ header nav ul li {
 }
 
 .job-display #title,
-.job-display #location {
+.job-display #location,
+.job-display #date {
   color: rgba(230, 241, 255, 49%);
 }
 
+.job-display #date {
+  font-size: 0.9em;
+}
+
+.job-display #location {
+  font-size: 0.9em;
+}
+
 .job-display #description {
+  width: 90%;
   margin-top: 1em;
   color: rgba(230, 241, 255, 100%);
+  margin: 1em auto 0em;
 }

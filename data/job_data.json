@@ -1,0 +1,59 @@
+{
+  "jobs": [
+    {
+      "code": "UCLA-IT",
+      "company": "UCLA IT Services",
+      "title": "Bruin Online Support Assistant",
+      "location": "Los Angeles, CA",
+      "startMonth": "September",
+      "startYear": "2019",
+      "endMonth": "now",
+      "endYear": null,
+      "description": ""
+    },
+    {
+      "code": "Blue-DOME",
+      "company": "Blue DOME Technologies",
+      "title": "Software Engineering Intern",
+      "location": "San Francisco, CA",
+      "startMonth": "July",
+      "startYear": "2019",
+      "endMonth": "September",
+      "endYear": "2019",
+      "description": ""
+    },
+    {
+      "code": "Racing",
+      "company": "Bruin Racing",
+      "title": "FSAE Electronics & Data Acquisition Team Member",
+      "location": "Los Angeles",
+      "startMonth": "September",
+      "startYear": "2018",
+      "endMonth": "now",
+      "endYear": null,
+      "description": "Assisting in the design and implementation of electrical systems of the vehicle. Also working on improving the dashboard to increase the accuracy and amount of information displayed."
+    },
+    {
+      "code": "ESRI-2",
+      "company": "ESRI",
+      "title": "Software Engineering Intern",
+      "location": "UAE",
+      "startMonth": "July",
+      "startYear": "2017",
+      "endMonth": "August",
+      "endYear": "2017",
+      "description": "Created drivers to add support for new file types in ArcGIS. Used GDAL to create an automated testing script to test support for different image file types and log the results. Also worked on enhancing the performance of the script and significantly reducing runtime."
+    },
+    {
+      "code": "ESRI-1",
+      "company": "ESRI",
+      "title": "Software Engineering Intern",
+      "location": "UAE",
+      "startMonth": "July",
+      "startYear": "2016",
+      "endMonth": "August",
+      "endYear": "2016",
+      "description": "Designed UI elements for windows in ArcGIS"
+    }
+  ]
+}

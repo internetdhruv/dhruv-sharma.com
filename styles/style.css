@@ -1,17 +1,17 @@
 /* FONTS */
 @font-face {
   font-family: CalibreMedium;
-  src: url("../fonts/Calibre/CalibreMedium.otf");
+  src: url('../fonts/Calibre/CalibreMedium.otf');
 }
 
 @font-face {
   font-family: Calibre;
-  src: url("../fonts/Calibre/CalibreRegular.otf");
+  src: url('../fonts/Calibre/CalibreRegular.otf');
 }
 
 @font-face {
   font-family: SF-Medium;
-  src: url("../fonts/SF/SFMono-Medium.otf");
+  src: url('../fonts/SF/SFMono-Medium.otf');
 }
 
 /* GLOBAL STYLES */
@@ -40,6 +40,15 @@ p {
   margin: 0 auto;
 }
 
+.dummy-header {
+  display: none;
+  /* content: ''
+  position: fixed; */
+  top: 0;
+  left: 0;
+  height: 30vh;
+}
+
 /* MOBILE ELEMENTS */
 
 .hide-mobile {
@@ -54,6 +63,7 @@ header {
   transition: top 0.2s ease-in-out;
   width: 100%;
   background: #0a192e;
+  z-index: 100;
 }
 
 .header-shadow {
@@ -116,7 +126,7 @@ header nav ul li {
 }
 
 #whitespace {
-  content: "";
+  content: '';
   position: fixed;
   top: 0;
   left: 0;
@@ -207,18 +217,18 @@ header nav ul li {
 /* ABOUT */
 
 .about {
-  margin-bottom: 15em;
+  margin-bottom: 10.5em;
 }
 
 .about h1 {
   font-size: 2em;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
 .about p {
   width: 90%;
   margin-top: 0;
-  margin-bottom: 1em;
+  margin-bottom: 2.5em;
 }
 
 .about h2 {
@@ -240,7 +250,9 @@ header nav ul li {
 }
 
 .skills {
+  margin-top: 2em;
   display: flex;
+  -webkit-overflow-scrolling: touch;
   overflow-x: auto;
   align-items: center;
 }
@@ -271,4 +283,71 @@ header nav ul li {
   font-size: 1.2em;
   padding: 0.4em 0 0.1em 0;
   text-align: center;
+}
+
+/* EXPERIENCE */
+
+.experience {
+  margin-bottom: 10.5em;
+}
+
+.experience h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.job-selector {
+  display: flex;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+  text-align: center;
+  margin-bottom: 2.5em;
+}
+
+.job-selector .job-title {
+  background: rgba(53, 68, 90, 100%);
+  color: rgba(230, 241, 255, 70%);
+  border-radius: 400px;
+  width: 10em;
+  min-width: 10em;
+  font-size: 1.2em;
+  padding: 0.4em 0 0.1em 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.job-selector .job-title-selected {
+  background: #64ffda;
+  color: #0a192e;
+  border-radius: 400px;
+  width: 10em;
+  min-width: 10em;
+  font-size: 1.2em;
+  padding: 0.4em 0 0.1em 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.job-display {
+  text-align: center;
+  background: rgba(53, 68, 90, 100%);
+  border-radius: 23px;
+  padding: 0em;
+  color: rgba(230, 241, 255, 100%);
+  height: 15em;
+}
+
+.job-display #company {
+  padding-top: 0.5em;
+  color: rgba(230, 241, 255, 100%);
+}
+
+.job-display #title,
+.job-display #location {
+  color: rgba(230, 241, 255, 49%);
+}
+
+.job-display #description {
+  margin-top: 1em;
+  color: rgba(230, 241, 255, 100%);
 }

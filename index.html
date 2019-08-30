@@ -25,6 +25,7 @@
     ></script>
   </head>
   <body>
+    <div class="dummy-header"></div>
     <header class="nav-down header-shadow">
       <div class="main-container">
         <h1>Dhruv Sharma</h1>
@@ -42,10 +43,14 @@
               <img src="./icons/elements/exit.svg" alt="exit menu" />
             </li>
             <li class="hide-mobile" id="whitespace"></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">experience</a></li>
-            <li><a href="#">projects</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a data-easing="easeInOutQuad" href="#about">about</a></li>
+            <li>
+              <a data-easing="easeInOutQuad" href="#experience">experience</a>
+            </li>
+            <li>
+              <a data-easing="easeInOutQuad" href="#projects">projects</a>
+            </li>
+            <li><a data-easing="easeInOutQuad" href="#contact">contact</a></li>
             <li>
               <a
                 href="./documents/Dhruv Sharma Resume ver5.pdf"
@@ -83,7 +88,7 @@
             />
           </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
           <h1>About</h1>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias,
@@ -93,49 +98,66 @@
           </p>
           <h2>Technologies I Have Worked With</h2>
           <div class="skills">
-              <div class="skill">
-                <div class="category">Languages</div>
-                <i class="devicon-python-plain-wordmark colored"></i>
-                <i class="devicon-c-plain-wordmark"></i>
-                <i class="devicon-cplusplus-plain-wordmark"></i>
-                <i class="devicon-java-plain-wordmark colored"></i>
-                <i class="devicon-javascript-plain colored"></i>
-                <i class="devicon-html5-plain-wordmark colored"></i>
-                <i class="devicon-css3-plain-wordmark colored"></i>
-              </div>
-              <div class="skill">
-                <div class="category">Frameworks</div>
-                <i class="devicon-nodejs-plain-wordmark colored"></i>
-                <i class="devicon-express-original"></i>
-                <i class="devicon-react-original-wordmark"></i>
-                <i class="devicon-sass-original colored"></i>
-              </div>
-              <div class="skill">
-                <div class="category">Tools</div>
-                <img src="./icons/tech-icons/bash.svg" class="svg-icons" />
-                <i class="devicon-git-plain-wordmark colored"></i>
-                <i class="devicon-github-plain-wordmark"></i>
-              </div>
-              <div class="skill">
-                <div class="category">Libraries</div>
-                <img src="./icons/tech-icons/OpenCV.svg" class="svg-icons" />
-                <img src="./icons/tech-icons/pandas.svg" class="svg-icons" />
-              </div>
-              <div class="skill">
-                  <div class="category">Others</div>
-                  <img src="./icons/tech-icons/arduino.svg" class="svg-icons" />
-                  <i class="devicon-photoshop-plain"></i>
-                  <i class="devicon-illustrator-plain colored"></i>
-                  <img src="./icons/tech-icons/excel.svg" class="svg-icons" />
-                  <img src="./icons/tech-icons/xd.svg" class="svg-icons" />
-                </div>
+            <div class="skill">
+              <div class="category">Languages</div>
+              <i class="devicon-python-plain-wordmark colored"></i>
+              <i class="devicon-c-plain-wordmark"></i>
+              <i class="devicon-cplusplus-plain-wordmark"></i>
+              <i class="devicon-java-plain-wordmark colored"></i>
+              <i class="devicon-javascript-plain colored"></i>
+              <i class="devicon-html5-plain-wordmark colored"></i>
+              <i class="devicon-css3-plain-wordmark colored"></i>
             </div>
+            <div class="skill">
+              <div class="category">Frameworks</div>
+              <i class="devicon-nodejs-plain-wordmark colored"></i>
+              <i class="devicon-express-original"></i>
+              <i class="devicon-react-original-wordmark"></i>
+              <i class="devicon-sass-original colored"></i>
+            </div>
+            <div class="skill">
+              <div class="category">Tools</div>
+              <img src="./icons/tech-icons/bash.svg" class="svg-icons" />
+              <i class="devicon-git-plain-wordmark colored"></i>
+              <i class="devicon-github-plain-wordmark"></i>
+            </div>
+            <div class="skill">
+              <div class="category">Libraries</div>
+              <img src="./icons/tech-icons/OpenCV.svg" class="svg-icons" />
+              <img src="./icons/tech-icons/pandas.svg" class="svg-icons" />
+            </div>
+            <div class="skill">
+              <div class="category">Others</div>
+              <img src="./icons/tech-icons/arduino.svg" class="svg-icons" />
+              <i class="devicon-photoshop-plain"></i>
+              <i class="devicon-illustrator-plain colored"></i>
+              <img src="./icons/tech-icons/excel.svg" class="svg-icons" />
+              <img src="./icons/tech-icons/xd.svg" class="svg-icons" />
+            </div>
+          </div>
+        </section>
+        <section class="experience" id="experience">
+          <h1>Experience</h1>
+          <div class="job-selector">
+            <div class="job-title" id="UCLA-IT">UCLA IT Services</div>
+            <div class="job-title" id="Blue-DOME">Blue DOME</div>
+            <div class="job-title" id="Racing">Bruin Racing</div>
+            <div class="job-title" id="ESRI-2">ESRI - 2017</div>
+            <div class="job-title" id="ESRI-1">ESRI - 2016</div>
+          </div>
+          <div class="job-display">
+            <h2 id="company"></h2>
+            <h3 id="title"></h3>
+            <h4 id="location"></h4>
+            <p id="description"></p>
           </div>
         </section>
       </div>
     </main>
   </body>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
   <script src="./scripts/index.js"></script>
   <script src="./scripts/navbar.js"></script>
   <script src="./scripts/scroll.js"></script>
+  <script src="./scripts/jobs.js"></script>
 </html>

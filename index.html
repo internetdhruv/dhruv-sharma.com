@@ -6,13 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="styles/style.css" />
     <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-touch-icon.png?v=YAXmgznBG0"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon-32x32.png?v=YAXmgznBG0"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="194x194"
+      href="/favicon-194x194.png?v=YAXmgznBG0"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/android-chrome-192x192.png?v=YAXmgznBG0"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon-16x16.png?v=YAXmgznBG0"
+    />
+    <link rel="manifest" href="/site.webmanifest?v=YAXmgznBG0" />
+    <link
+      rel="mask-icon"
+      href="/safari-pinned-tab.svg?v=YAXmgznBG0"
+      color="#0a192e"
+    />
+    <link rel="shortcut icon" href="/favicon.ico?v=YAXmgznBG0" />
+    <meta name="apple-mobile-web-app-title" content="Dhruv Sharma" />
+    <meta name="application-name" content="Dhruv Sharma" />
+    <meta name="msapplication-TileColor" content="#64ffda" />
+    <meta
+      name="msapplication-TileImage"
+      content="/mstile-144x144.png?v=YAXmgznBG0"
+    />
+    <meta name="theme-color" content="#64ffda" />
+    <link
       rel="stylesheet"
       href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
     />
     <title>Dhruv Sharma</title>
     <meta
       name="description"
-      content="Dhruv Sharma - Hacker, Software Engineer, Aspiring Entrepreneur based in Los Angeles. Computer Science student at UCLA Henry Samueli School of Engineering."
+      content="Dhruv Sharma - Web Developer, Software Engineer, Aspiring Entrepreneur based in Los Angeles. Computer Science student at UCLA Henry Samueli School of Engineering."
     />
     <meta
       name="keywords"
@@ -23,6 +67,7 @@
       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
       crossorigin="anonymous"
     ></script>
+    <script src="https://kit.fontawesome.com/6be64941fd.js"></script>
   </head>
   <body>
     <div class="dummy-header"></div>
@@ -91,12 +136,16 @@
         <section class="about" id="about">
           <h1>About</h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias,
-            vitae beatae deserunt omnis exercitationem quod, accusantium
-            repellat repudiandae ex iste quas, harum tenetur reprehenderit
-            nihil! Dolorem pariatur magnam quaerat sit?
+            Hi! I'm a Computer Science student at the University of California,
+            Los Angeles. I specialize in image processing, text
+            detection/recognition and web development. I'm also interested in
+            data analytics, with an emphasis on its use in the finance industry.
+            <br />
+            <br />
+            Get in touch with me if you have any opportunities you would like to
+            discus, or for freelance web development work!
           </p>
-          <h2>Technologies I Have Worked With</h2>
+          <h2>Some Technologies I Have Worked With</h2>
           <div class="skills">
             <div class="skill">
               <div class="category">Languages</div>
@@ -138,19 +187,61 @@
         </section>
         <section class="experience" id="experience">
           <h1>Experience</h1>
-          <div class="job-selector">
-            <div class="job-title" id="UCLA-IT">UCLA IT Services</div>
-            <div class="job-title" id="Blue-DOME">Blue DOME</div>
-            <div class="job-title" id="Racing">Bruin Racing</div>
-            <div class="job-title" id="ESRI-2">ESRI - 2017</div>
-            <div class="job-title" id="ESRI-1">ESRI - 2016</div>
+          <div class="experience-container-desktop">
+            <div class="job-selector">
+              <div class="jobs">
+                <div class="job-title" id="Blue-DOME">Blue DOME</div>
+                <div class="job-title" id="UCLA-IT">UCLA IT Services</div>
+                <div class="job-title" id="Racing">Bruin Racing</div>
+                <div class="job-title" id="ESRI-2">ESRI - 2017</div>
+                <div class="job-title" id="ESRI-1">ESRI - 2016</div>
+              </div>
+            </div>
+            <div class="job-display">
+              <h2 id="company"></h2>
+              <h3 id="title"></h3>
+              <h3 id="date"></h3>
+              <h4 id="location"></h4>
+              <p id="description"></p>
+            </div>
           </div>
-          <div class="job-display">
-            <h2 id="company"></h2>
-            <h3 id="title"></h3>
-            <h3 id="date"></h3>
-            <h4 id="location"></h4>
-            <p id="description"></p>
+        </section>
+        <section class="projects" id="projects">
+          <h1>Projects</h1>
+          <div id="projects-container"></div>
+        </section>
+        <section class="contact" id="contact">
+          <h1>Contact</h1>
+          <ul class="contact-options">
+            <li>
+              <a href="mailto:dhruvsharma0503@gmail.com" class="social-icon">
+                <i class="fa fa-envelope"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com/in/dhruvsharma78"
+                class="social-icon"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/dhruvsharma78" class="social-icon">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="sign">
+            <p>Dhruv Sharma</p>
+            <p>
+              <a href="mailto:dhruvsharma0503@gmail.com"
+                >dhruvsharma0503@gmail.com</a
+              >
+            </p>
+            <p>University of California, Los Angeles</p>
+            <p>Los Angeles</p>
+            <p>USA</p>
           </div>
         </section>
       </div>
@@ -161,4 +252,5 @@
   <script src="./scripts/navbar.js"></script>
   <script src="./scripts/scroll.js"></script>
   <script src="./scripts/jobs.js"></script>
+  <script src="./scripts/projects.js"></script>
 </html>

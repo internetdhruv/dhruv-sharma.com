@@ -619,8 +619,13 @@ header nav ul li {
   margin-right: 0.2em;
 }
 
+.project-footer .links {
+  display: flex;
+  justify-content: space-between;
+}
+
 .project-footer .links a {
-  margin-left: 0.25em;
+  margin-left: 0.5em;
   color: #64ffda;
 }
 

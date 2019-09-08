@@ -1,0 +1,66 @@
+{
+  "projects": [
+    {
+      "title": "Zombie Dash",
+      "summary": "A zombie apocalypse game developed in C++",
+      "links": {
+        "github": "https://github.com/dhruvsharma78/zombie-dash",
+        "project": null
+      },
+      "techUsed": [
+        "<i class=\"devicon-cplusplus-plain-wordmark\"></i>",
+        "Free Glut"
+      ],
+      "imgSrc": "./icons/projects/zombie.svg"
+    },
+    {
+      "title": "Genome Matcher",
+      "summary": "A tool to store extremely large DNA sequences and efficiently search a query for partial or complete DNA matches",
+      "links": {
+        "github": "http://github.com/dhruvsharma78/genome-matcher",
+        "project": null
+      },
+      "techUsed": ["<i class=\"devicon-cplusplus-plain-wordmark\"></i>"],
+      "imgSrc": "./icons/projects/geenomics.svg"
+    },
+    {
+      "title": "Racing Dashboard",
+      "summary": "An arduino based customizable dashboard controller that displays vital car information on a dashboard screen",
+      "links": {
+        "github": "http://github.com/dhruvsharma78/racing-dashboard",
+        "project": null
+      },
+      "techUsed": [
+        "<i class=\"devicon-cplusplus-plain-wordmark\"></i>",
+        "<i class=\"devicon-c-plain-wordmark\"></i>",
+        "Arduino"
+      ],
+      "imgSrc": "./icons/projects/racing-dashboard.svg"
+    },
+    {
+      "title": "Keimeno",
+      "summary": "A simple text editor I developed to learn how editors work. This is an ongoing project. My goal is to combine some of my most used features from emacs and vim to make a personal text editor for quick editing work",
+      "links": {
+        "github": "https://github.com/dhruvsharma78/keimeno",
+        "project": null
+      },
+      "techUsed": ["<i class=\"devicon-c-plain-wordmark\"></i>"],
+      "imgSrc": "./icons/projects/keimeno.svg"
+    },
+    {
+      "title": "Stock Lookup",
+      "summary": "A web app that provides basic financial data for companies as well as links to trending news articles",
+      "links": {
+        "github": "https://github.com/dhruvsharma78/stock-lookup",
+        "project": "https://stock-lookup.netlify.com"
+      },
+      "techUsed": [
+        "<i class=\"devicon-react-original-wordmark\"></i>",
+        "<i class=\"devicon-javascript-plain colored\"></i>",
+        "<i class=\"devicon-html5-plain-wordmark colored\"></i>",
+        "<i class=\"devicon-css3-plain-wordmark colored\"></i>"
+      ],
+      "imgSrc": "./icons/projects/stock-lookup.svg"
+    }
+  ]
+}

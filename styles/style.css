@@ -650,6 +650,9 @@ header nav ul li {
 
   .project a {
     width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .project .project-description {

@@ -4,7 +4,7 @@ const racing = document.getElementById('Racing');
 const esri2 = document.getElementById('ESRI-2');
 const esri1 = document.getElementById('ESRI-1');
 
-let selectedJob = 'UCLA-IT';
+let selectedJob = 'Blue-DOME';
 let lastSelectedJob = selectedJob;
 
 function fetchJSONFile(path, callback) {
@@ -21,26 +21,41 @@ function fetchJSONFile(path, callback) {
   httpRequest.send();
 }
 
+let jobData = null;
+
+function setData(data) {
+  jobData = data;
+}
+
+fetchJSONFile('../data/job_data.json', setData);
+
+const setJobText = (data) => {
+  let dateText;
+  dateText = `${data.startMonth}, ${data.startYear}`;
+  if (data.endYear === null) {
+    dateText += ' - Present';
+  } else {
+    dateText += ` - ${data.endMonth}, ${data.endYear}`;
+  }
+  document.getElementById('company').innerHTML = data.company;
+  document.getElementById('title').innerHTML = data.title;
+  document.getElementById('date').innerHTML = dateText;
+  document.getElementById('location').innerHTML = data.location;
+  document.getElementById('description').innerHTML = data.description;
+};
+
 const updateDisplayedJob = () => {
   document
     .getElementById(lastSelectedJob)
     .classList.remove('job-title-selected');
   document.getElementById(selectedJob).classList.add('job-title-selected');
-  fetchJSONFile('../data/job_data.json', (res) => {
-    const foundJob = res.jobs.find((job) => job.code === selectedJob);
-    let dateText;
-    dateText = `${foundJob.startMonth}, ${foundJob.startYear}`;
-    if (foundJob.endYear === null) {
-      dateText += ' - Present';
-    } else {
-      dateText += ` - ${foundJob.endMonth}, ${foundJob.endYear}`;
-    }
-    document.getElementById('company').innerHTML = foundJob.company;
-    document.getElementById('title').innerHTML = foundJob.title;
-    document.getElementById('date').innerHTML = dateText;
-    document.getElementById('location').innerHTML = foundJob.location;
-    document.getElementById('description').innerHTML = foundJob.description;
-  });
+  if (jobData === null) {
+    fetchJSONFile('../data/job_data.json', (res) => {
+      setJobText(res.jobs.find((job) => job.code === selectedJob));
+    });
+  } else {
+    setJobText(jobData.jobs.find((job) => job.code === selectedJob));
+  }
 };
 
 uclaIT.addEventListener('click', () => {

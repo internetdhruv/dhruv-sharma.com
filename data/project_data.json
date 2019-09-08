@@ -1,6 +1,21 @@
 {
   "projects": [
     {
+      "title": "Stock Lookup",
+      "summary": "A web app that provides basic financial data for companies as well as links to trending news articles",
+      "links": {
+        "github": "https://github.com/dhruvsharma78/stock-lookup",
+        "project": "https://stock-lookup.netlify.com"
+      },
+      "techUsed": [
+        "<i class=\"devicon-react-original-wordmark\"></i>",
+        "<i class=\"devicon-javascript-plain colored\"></i>",
+        "<i class=\"devicon-html5-plain-wordmark colored\"></i>",
+        "<i class=\"devicon-css3-plain-wordmark colored\"></i>"
+      ],
+      "imgSrc": "./icons/projects/stock-lookup.svg"
+    },
+    {
       "title": "Zombie Dash",
       "summary": "A zombie apocalypse game developed in C++",
       "links": {
@@ -46,21 +61,6 @@
       },
       "techUsed": ["<i class=\"devicon-c-plain-wordmark\"></i>"],
       "imgSrc": "./icons/projects/keimeno.svg"
-    },
-    {
-      "title": "Stock Lookup",
-      "summary": "A web app that provides basic financial data for companies as well as links to trending news articles",
-      "links": {
-        "github": "https://github.com/dhruvsharma78/stock-lookup",
-        "project": "https://stock-lookup.netlify.com"
-      },
-      "techUsed": [
-        "<i class=\"devicon-react-original-wordmark\"></i>",
-        "<i class=\"devicon-javascript-plain colored\"></i>",
-        "<i class=\"devicon-html5-plain-wordmark colored\"></i>",
-        "<i class=\"devicon-css3-plain-wordmark colored\"></i>"
-      ],
-      "imgSrc": "./icons/projects/stock-lookup.svg"
     }
   ]
 }

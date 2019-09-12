@@ -98,7 +98,7 @@
             <li><a data-easing="easeInOutQuad" href="#contact">contact</a></li>
             <li>
               <a
-                href="./documents/Dhruv Sharma Resume ver5.pdf"
+                href="./documents/Dhruv_Sharma_Resume_V6.pdf"
                 id="resume-button"
                 >resume</a
               >
@@ -253,4 +253,13 @@
   <script src="./scripts/scroll.js"></script>
   <script src="./scripts/jobs.js"></script>
   <script src="./scripts/projects.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+        .register('scripts/serviceworker.js')
+        .then(function() {
+          console.log('Service Worker Registered');
+        });
+    }
+  </script>
 </html>

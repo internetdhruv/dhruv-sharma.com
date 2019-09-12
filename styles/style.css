@@ -26,7 +26,7 @@
 body {
   font-family: Calibre, sans-serif;
   background: #0a192e;
-  color: rgba(230, 241, 255, 100%);
+  color: rgba(230, 241, 255, 1);
 }
 
 a {
@@ -35,7 +35,7 @@ a {
 }
 
 p {
-  color: rgba(230, 241, 255, 49%);
+  color: rgba(230, 241, 255, 0.49);
 }
 
 .main-container {
@@ -81,7 +81,7 @@ header {
 }
 
 .header-shadow {
-  box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 16%);
+  box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.16);
 }
 
 .nav-up {
@@ -115,7 +115,7 @@ header nav ul {
   width: 50%;
   top: 0;
   right: 0;
-  background: rgba(10, 25, 46, 90%);
+  background: rgba(10, 25, 46, 0.9);
   height: 100%;
   z-index: 7;
   padding-top: 3em;
@@ -257,7 +257,7 @@ header nav ul li {
   font-family: Calibre;
   font-size: 0.688em;
   font-size: 0.7em;
-  color: rgba(230, 241, 255, 49%);
+  color: rgba(230, 241, 255, 0.49);
   display: flex;
 }
 
@@ -267,7 +267,7 @@ header nav ul li {
 
 .hero p {
   font-size: 1.125em;
-  color: rgba(230, 241, 255, 49%);
+  color: rgba(230, 241, 255, 0.49);
   width: 80%;
 }
 
@@ -448,7 +448,7 @@ header nav ul li {
 
 .jobs .job-title {
   background: rgba(53, 68, 90, 0.2);
-  color: rgba(230, 241, 255, 70%);
+  color: rgba(230, 241, 255, 0.7);
   border-radius: 400px;
   width: 10em;
   min-width: 10em;
@@ -476,19 +476,19 @@ header nav ul li {
   background: rgba(53, 68, 90, 0.2);
   border-radius: 23px;
   padding: 0em;
-  color: rgba(230, 241, 255, 100%);
+  color: rgba(230, 241, 255, 1);
   height: 15em;
 }
 
 .job-display #company {
   padding-top: 0.5em;
-  color: rgba(230, 241, 255, 100%);
+  color: rgba(230, 241, 255, 1);
 }
 
 .job-display #title,
 .job-display #location,
 .job-display #date {
-  color: rgba(230, 241, 255, 49%);
+  color: rgba(230, 241, 255, 0.49);
 }
 
 .job-display #date {
@@ -502,7 +502,7 @@ header nav ul li {
 .job-display #description {
   width: 90%;
   margin-top: 1em;
-  color: rgba(230, 241, 255, 100%);
+  color: rgba(230, 241, 255, 1);
   margin: 1em auto 0em;
   overflow: auto;
   height: 7em;
@@ -533,7 +533,7 @@ header nav ul li {
   .jobs .job-title {
     background: none;
     margin-bottom: 0.3em;
-    color: rgba(230, 241, 255, 70%);
+    color: rgba(230, 241, 255, 0.7);
     border-radius: 0px;
     width: auto;
     min-width: 10em;
